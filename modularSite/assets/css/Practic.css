@@ -1,0 +1,70 @@
+:root {
+    --main-color: #0B2B26;
+    --secondary-color: #588157;
+    --splash-color: #98A378;
+    --main-text-color: #F0F0F0;
+    --secondary-text-color: black;
+    --selected-link-text: #93bc67;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#mainContent {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-item h2 {
+    color: var(--main-text-color);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item p {
+    color: var(--secondary-text-color);
+}
+
+button {
+    background-color: var(--splash-color);
+    color: var(--main-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--selected-link-text);
+}

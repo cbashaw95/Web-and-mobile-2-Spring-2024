@@ -1,0 +1,17 @@
+.slide{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    transition: opacity 2.5s ease-in;
+    
+}
+.slide img + .slide img { opacity: 0.95; }
+
+.slideshow-container {
+    max-width: 100%;
+}
+
+.grid-item .slide {
+    margin-left: auto;
+    margin-right: auto;
+}
